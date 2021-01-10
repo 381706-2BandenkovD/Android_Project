@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/game"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="60dp"
+    android:paddingTop="60dp"
+    android:background="@drawable/pixel">
+
+<LinearLayout
+    android:id="@+id/imgs"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_centerHorizontal="true">
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/slot5"/>
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/slot5"/>
+
+    <ImageView
+        android:id="@+id/img3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/slot5"/>
+
+</LinearLayout>
+
+<TextView
+    android:id="@+id/msg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:textSize="30sp"
+    android:layout_below="@id/imgs"
+    android:layout_centerHorizontal="true"/>
+
+<Button
+    android:id="@+id/btn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Start"
+    android:layout_marginTop="50dp"
+    android:layout_below="@id/msg"
+    android:layout_centerHorizontal="true"/>
+<TextView
+    android:id="@+id/textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@id/btn"
+    android:textSize="24sp"
+    tools:text="90"/>
+<SeekBar
+    android:id="@+id/seekBar"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/textView"
+    android:layout_centerHorizontal="true"
+    android:max="100"
+    android:progress="3" />
+
+<TextView
+    android:id="@+id/textVin"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:textColor="@color/white"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@id/seekBar"
+    android:textSize="18sp"/>
+
+<Button
+    android:id="@+id/b2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/textVin"
+    android:layout_centerHorizontal="true"
+    android:onClick="Backmen"
+    android:text="Назад" />
+
+</RelativeLayout>

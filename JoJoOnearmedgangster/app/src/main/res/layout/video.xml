@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/mback2">
+
+
+    <VideoView
+        android:layout_marginTop="120dp"
+        android:layout_width="392dp"
+        android:layout_height="550dp"
+        android:layout_weight="0"
+        android:orientation="vertical"
+        android:id="@+id/videoPlayer"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/b2"
+        android:text="Еще раз"
+        android:layout_weight="1"
+        android:onClick="Backnu"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/b1"
+        android:text="Назад в меню"
+        android:layout_weight="1"
+        android:onClick="Backu"/>
+    </LinearLayout>
+</LinearLayout>

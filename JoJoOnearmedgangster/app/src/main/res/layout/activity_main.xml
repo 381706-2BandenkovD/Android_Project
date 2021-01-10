@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/casino">
+
+    <EditText
+        android:id="@+id/nameBox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите имя"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/yearBox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите ваш возраст"
+        android:textColor="@color/white"
+        android:inputType="numberDecimal" />
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сохранить"
+        android:onClick="saveData"/>
+    <TextView
+        android:id="@+id/dataView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
+    <Button
+        android:id="@+id/getButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Проверить данные"
+        android:onClick="getData"/>
+
+    <Button
+        android:id="@+id/transfer_game"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Крутить Барабан"
+        android:layout_gravity="center"
+        android:onClick="GameClick"/>
+
+    <Button
+        android:id="@+id/transfer_game2"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Поймать Банан"
+        android:layout_gravity="center"
+        android:onClick="Game2Click"/>
+
+    <Button
+        android:id="@+id/transfer"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="Click"
+        android:text="Картинки" />
+
+</LinearLayout>

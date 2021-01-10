@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "JoJo One-armed gangster"
